@@ -7,7 +7,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :password_digest
       t.string :avatar
       t.boolean :adult
-      t.referencesage :home
+      t.references :home
       t.string :more
 
       t.timestamps
